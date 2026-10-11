@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de página tipo one page scroll</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="anchomax">
+            <div id="logo">
+                <a href="index.html" title="Ir al apartado de inicio">
+                    <img src="img/logo.png" alt="Logo de la empresa">
+                </a>
+            </div>
+            <nav>
+                <div id="menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul>
+                    <li><a href="#" title="Ver apartado de inicio">Inicio</a></li>
+                    <li><a href="#" title="Ver apartado de Servicios">Servicios</a></li>
+                    <li><a href="#" title="Ver apartado de la empresa">La empresa</a></li>
+                    <li><a href="#" title="Ver apartado de Contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="slider">
+            <h1>Título principal</h1>
+        </section>
+        <section class="bg-claro" id="servicios">
+            <h2>Nuestros servicios: conoce las actividades que realizamos</h2>
+            <div class="anchomax row">
+                <article>
+                    <img src="img/kayak.webp" alt="Ofrecemos servicios de actividades con kayak">
+                    <h3>Actividades de agua: Kayak</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime vero voluptate neque doloribus
+                        ducimus
+                        illo ad cupiditate perferendis, blanditiis odio facere consectetur sequi impedit eligendi vel,
+                        minima
+                        nulla, earum provident.</p>
+                    <!-- <p><a href="javascript:void(0)" onclick="mostrarInfo1()" title="Ampliar información acerca de actividades con kayak">Saber más sobre Kayaks</a></p> -->
+                    <button onclick="mostrarInfo1()" title="Ampliar información acerca de actividades con kayak">Saber
+                        más
+                        sobre Kayaks</button>
+                    <!-- PARA NOTA
+                 <button data-info="kallak" aria-controls="kallak">Saber más</button> -->
+                </article>
+                <article>
+                    <img src="img/escalada.webp" alt="Ofrecemos servicios de actividades con kayak">
+                    <h3>Actividades: Escalada</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime vero voluptate neque doloribus
+                        ducimus
+                        illo ad cupiditate perferendis, blanditiis odio facere consectetur sequi impedit eligendi vel,
+                        minima
+                        nulla, earum provident.</p>
+                    <p><a href="javascript:void(0)" title="Ampliar información acerca de actividades de escalada"
+                            onclick="mostrarInfo2()">Saber más sobre escalada</a></p>
+                </article>
+                <article>
+                    <img src="img/senderismo.webp" alt="Ofrecemos servicios de actividades de senderismo">
+                    <h3>Actividades de tierra: senderismo</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime vero voluptate neque doloribus
+                        ducimus
+                        illo ad cupiditate perferendis, blanditiis odio facere consectetur sequi impedit eligendi vel,
+                        minima
+                        nulla, earum provident.</p>
+                    <p><a href="javascript:void(0)" title="Ampliar información acerca de actividades de senderismo"
+                            onclick="mostrarInfo3()">Saber más sobre senderismo</a></p>
+                </article>
+            </div>
+            <div class="anchomax" id="kallak">
+                <h3>Actividades de agua: Kayak</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime vero voluptate neque doloribus
+                    ducimus
+                    illo ad cupiditate perferendis, blanditiis odio facere consectetur sequi impedit eligendi vel,
+                    minima
+                    nulla, earum provident.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime vero voluptate neque doloribus
+                    ducimus
+                    illo ad cupiditate perferendis, blanditiis odio facere consectetur sequi impedit eligendi vel,
+                    minima
+                    nulla, earum provident.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime vero voluptate neque doloribus
+                    ducimus
+                    illo ad cupiditate perferendis, blanditiis odio facere consectetur sequi impedit eligendi vel,
+                    minima
+                    nulla, earum provident.</p>
+            </div>
+            <div class="anchomax" id="escalada">
+                <h3>Actividades de tierra: Escalada</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime vero voluptate neque doloribus
+                    ducimus
+                    illo ad cupiditate perferendis, blanditiis odio facere consectetur sequi impedit eligendi vel,
+                    minima
+                    nulla, earum provident.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime vero voluptate neque doloribus
+                    ducimus
+                    illo ad cupiditate perferendis, blanditiis odio facere consectetur sequi impedit eligendi vel,
+                    minima
+                    nulla, earum provident.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime vero voluptate neque doloribus
+                    ducimus
+                    illo ad cupiditate perferendis, blanditiis odio facere consectetur sequi impedit eligendi vel,
+                    minima
+                    nulla, earum provident.</p>
+            </div>
+            <div class="anchomax" id="senderismo">
+                <h3>Actividades de tierra: senderismo</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime vero voluptate neque doloribus
+                    ducimus
+                    illo ad cupiditate perferendis, blanditiis odio facere consectetur sequi impedit eligendi vel,
+                    minima
+                    nulla, earum provident.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime vero voluptate neque doloribus
+                    ducimus
+                    illo ad cupiditate perferendis, blanditiis odio facere consectetur sequi impedit eligendi vel,
+                    minima
+                    nulla, earum provident.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime vero voluptate neque doloribus
+                    ducimus
+                    illo ad cupiditate perferendis, blanditiis odio facere consectetur sequi impedit eligendi vel,
+                    minima
+                    nulla, earum provident.</p>
+            </div>
+        </section>
+        <section id="parallax">
+            <h2>Algunos de los que lo han probado opinan</h2>
+            <div class="contenedor-testimonios">
+                <div class="testimonios">
+                    <div class="testimonio">
+                        <img src="img/testimonio_01.webp" alt="Foto de perfil de usuario que da su opinión">
+                        <h3>Nombre</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi vero consequuntur omnis
+                            recusandae. Fugiat nesciunt, iste sunt dicta ut repellat vero iusto autem minus cupiditate
+                            explicabo sit aperiam voluptatem illo?</p>
+                    </div>
+                    <div class="testimonio">
+                        <img src="img/testimonio_02.webp" alt="Foto de perfil de usuario que da su opinión">
+                        <h3>Nombre</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi vero consequuntur omnis
+                            recusandae. Fugiat nesciunt, iste sunt dicta ut repellat vero iusto autem minus cupiditate
+                            explicabo sit aperiam voluptatem illo?</p>
+                    </div>
+                    <div class="testimonio">
+                        <img src="img/testimonio_03.webp" alt="Foto de perfil de usuario que da su opinión">
+                        <h3>Nombre</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi vero consequuntur omnis
+                            recusandae. Fugiat nesciunt, iste sunt dicta ut repellat vero iusto autem minus cupiditate
+                            explicabo sit aperiam voluptatem illo?</p>
+                    </div>
+                    <div class="testimonio">
+                        <img src="img/testimonio_04.webp" alt="Foto de perfil de usuario que da su opinión">
+                        <h3>Nombre</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi vero consequuntur omnis
+                            recusandae. Fugiat nesciunt, iste sunt dicta ut repellat vero iusto autem minus cupiditate
+                            explicabo sit aperiam voluptatem illo?</p>
+                    </div>
+                    <div class="testimonio">
+                        <img src="img/testimonio_05.webp" alt="Foto de perfil de usuario que da su opinión">
+                        <h3>Nombre</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi vero consequuntur omnis
+                            recusandae. Fugiat nesciunt, iste sunt dicta ut repellat vero iusto autem minus cupiditate
+                            explicabo sit aperiam voluptatem illo?</p>
+                    </div>
+
+                </div>
+                <button class="carrusel-boton anterior" onclick="atras()">&lt;</button>
+                <button class="carrusel-boton siguiente" onclick="adelante()">&gt;</button>
+            </div>
+        </section>
+        <section class="bg-oscuro column">
+            <div class="anchomax column">
+                <div class="mitad">
+                    <img src="img/equipo.webp" alt="Imagen de los integrantes de la empresa">
+                </div>
+                <div class="transparencia">
+                    <h2>La empresa: conócenos</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat deleniti ipsum quisquam non
+                        quas quaerat possimus maiores harum esse dolorem, eaque suscipit tempora voluptate quidem
+                        provident corrupti magnam veritatis corporis?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat deleniti ipsum quisquam non
+                        quas quaerat possimus maiores harum esse dolorem, eaque suscipit tempora voluptate quidem
+                        provident corrupti magnam veritatis corporis?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat deleniti ipsum quisquam non
+                        quas quaerat possimus maiores harum esse dolorem, eaque suscipit tempora voluptate quidem
+                        provident corrupti magnam veritatis corporis?</p>
+                </div>
+            </div>
+
+        </section>
+        <section class="bg-claro">
+            <div class="anchomax">
+                <div class="cuarenta">
+                    <p>Domicilio:</p>
+                    <p>Teléfono:</p>
+                    <p>E-mail:</p>
+                    <p>RRSS</p>
+                </div>
+                <div class="sesenta">
+                    <form action="" method="post" onsubmit="return validarForm()" >
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" placeholder="Nombre">
+                        <span class="error" id="nombreError"></span>
+
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" placeholder="Teléfono">
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Email">
+                        <span class="error" id="emailError"></span>
+
+                        <label for="contrasena">Contraseña</label>
+                        <div class="relative">
+                            <input type="password" id="contrasena" placeholder="Contraseña">
+                        <span class="ojito" onclick="verPass()">Ver</span>
+                        </div>
+
+                        <label for="mensaje">¿Qué nos quieres contar?</label>
+                        <textarea name="mensaje" id="mensaje"></textarea>
+
+                        <input type="submit" value="Enviar">
+                        <span id="mensajeExito"></span>
+
+                    </form>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#" title="ver política de privacidad">Política de Privacidad</a></li>
+                <li><a href="#" title="ver política de cookies">Política de Cookies</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="js/servicios.js"></script>
+    <script src="js/carrusel.js"></script>
+    <script src="js/form.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="encabezado">
+        <div class="logoClaro">
+            <img src="img/logo.jpg" alt="logo de fashion cheap">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" title="Ir a la página de 'Inicio'">Inicio</a></li>
+                <li><a href="#" title="Ir a la página de '¿Quien soy?'">¿Quien soy?</a></li>
+                <li><a href="#" title="Ir a la página de 'Servicios'">Servicios</a></li>
+                <li><a href="#" title="Ir a la página de 'Contacto'">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+
+    <main>
+        <section>
+            <h1>Esta es mi primera sección</h1>
+            <h2>Aprendiendo con Marta</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui suscipit labore, quam eius nulla
+                incidunt. Molestiae ipsum eveniet fugit, aspernatur non sed aliquam eligendi enim nisi numquam
+                libero voluptates incidunt.</p>
+            <div id="manos">
+                <img src="img/img-peque.webp" onclick="grande()" alt="Fotografía de prueba">
+            </div>
+        </section>
+        <section>
+            <h2>Ania Kubów</h2>
+            <p>Ania ahora divide su tiempo entre el desarrollo de software y la creación de cursos online. Ania abandonó
+                la carrera de la rata hace unos años para centrarse en su creciente canal de YouTube, que ya ha
+                acumulado más de 8 millones de visitas y 250 mil suscriptores. Ania se dedica a "llegar y enseñar" con
+                el objetivo de educar a los estudiantes sobre cómo programar creando juegos retro y proyectos
+                increíbles. Puedes hacer que tus miércoles sean aún más maravillosos echando un vistazo a los vídeos
+                semanales de Ania en YouTube y FreeCodeCamp.</p>
+        </section>
+        <section>
+            <h2>Lana Lux</h2>
+            <p>Lana es una desarrolladora independiente a tiempo completo que trabaja actualmente en su propio juego
+                apocalíptico de supervivencia urbana, llamado STRAIN. Puedes ver sus transmisiones diarias en Twitch y
+                sus tutoriales en YouTube. El enfoque desenfadado de Lana sobre el desarrollo de juegos es siempre
+                divertido, refrescante e informativo. A diferencia de otros desarrolladores que hemos mencionado en
+                nuestra lista, Lana no se limita a escribir código, sino que es una auténtica artista 3D que crea
+                montones de magníficos recursos para sus juegos. Si quieres saber más sobre el mundo del desarrollo de
+                juegos independientes, Unity, C# y Maya 3D, deberías echar un vistazo a Lana Lux..</p>
+        </section>
+        <section>
+            <h2>Mosh</h2>
+            <p>Mosh Hamedani es un ingeniero de software con más de dos décadas de experiencia. Ha enseñado a programar
+                a más de 10 millones de estudiantes a través de sus cursos en línea y su canal de YouTube, donde ha
+                conseguido un gran número de seguidores, más de 2 millones de suscriptores. Mosh cree que la
+                programación debe ser divertida y accesible para todos. Empezó a programar a los siete años en un
+                Commodore 64 y se enamoró de ello. Fuera del mundo del software, le gusta la fotografía, tocar el piano
+                de jazz, la natación y los bailes latinos.</p>
+        </section>
+        <section>
+            <h2>CJ, de Coding Garden</h2>
+            <p>CJ empezó a programar Coding Garden hace un par de años y desde entonces ha estado publicando contenidos
+                nuevos varias veces a la semana. La comunidad es abierta, interactiva y atractiva. Cualquier
+                programador, desde el principiante al experto, puede aprender y crecer juntos. Ya se trate de un
+                tutorial, una sesión de preguntas y respuestas, la resolución de un problema algorítmico o el diseño y
+                creación de una aplicación completa, siempre hay algo nuevo que aprender en el jardín. Con cerca de
+                50.000 seguidores en Twitch, 120.000 en YouTube y más de 4,5 millones de visitas, estarás en buena
+                compañía cuando te remangues y profundices en el contenido de Coding Garden..</p>
+        </section>
+        <section>
+            <h2>Shaun Pelling (Net Ninja)</h2>
+            <p>Shaun es un desarrollador web full-stack e instructor online con más de 1000 tutoriales de programación
+                gratuitos en su canal de YouTube The Net Ninja. Su enorme biblioteca abarca temas como JavaScript
+                moderno, Node.js, React, Vue.js y Firebase, por nombrar sólo algunos. La profundidad y amplitud de sus
+                cursos le han ayudado a conseguir un público fiel de casi 1 millón de suscriptores. Además de crear
+                atractivos contenidos para los cursos, Shaun trabaja en varios sitios web de comercio electrónico con
+                sede en el Reino Unido, tanto para pequeñas organizaciones independientes como para grandes marcas
+                internacionales.</p>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#" title="Ir a la página de 'Política de privacidad'">Política de privacidad</a></li>
+                <li><a href="#" title="Ir a la página de 'Política de cookies'">Política de cookies</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <div id="modal">
+        <span class="cerrar" onclick="cerrarGrande()">X</span>
+        <img src="img/img-grande.jpg" onclick="grande()" alt="Fotografia de prueba">
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

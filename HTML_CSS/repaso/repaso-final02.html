@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style_repasofinal02.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <div class="anchomax">
+            <a href="index.html" title="Ir a página de inicio"><img src="img/logo.png" alt="Logotipo de mi empresa"></a>
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbox">
+                    Menú
+                </label>
+                <ul>
+                    <li><a href="#carta" title="ir a la sección de la carta ">Carta</a></li>
+                    <li><a href="#restaurante" title="ir a la sección restaurante">Restaurante</a></li>
+                    <li><a href="#reserva" title="ir a la sección de reserva">Reserva</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+    <main>
+        <section>
+            <h1>Nuestro restaurante</h1>
+        </section>
+        <section id="carta">
+            <h2>Carta</h2>
+            <div class="anchomax">
+                <article>
+                    <h3>Para compartir</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit magnam doloremque, libero nisi
+                        consequuntur, error, ut dolore dolores voluptatibus accusamus ducimus architecto illum! Sequi
+                        libero dolore asperiores perspiciatis tempora quis?</p>
+                    <p><a href="#" title="Ver más sobre platos a compartir">Ver más</a></p>
+                </article>
+                <article>
+                    <h3>Hamburguesas</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit magnam doloremque, libero nisi
+                        consequuntur, error, ut dolore dolores voluptatibus accusamus ducimus architecto illum! Sequi
+                        libero dolore asperiores perspiciatis tempora quis?</p>
+                    <p><a href="#" title="Ver más sobre hamburguesas a compartir">Ver más</a></p>
+                </article>
+                <article>
+                    <h3>Ensaladas</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit magnam doloremque, libero nisi
+                        consequuntur, error, ut dolore dolores voluptatibus accusamus ducimus architecto illum! Sequi
+                        libero dolore asperiores perspiciatis tempora quis?</p>
+                    <p><a href="#" title="Ver más sobre ensaladas a compartir">Ver más</a></p>
+                </article>
+                <article>
+                    <h3>Postres</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit magnam doloremque, libero nisi
+                        consequuntur, error, ut dolore dolores voluptatibus accusamus ducimus architecto illum! Sequi
+                        libero dolore asperiores perspiciatis tempora quis?</p>
+                    <p><a href="#" title="Ver más sobre postres a compartir">Ver más</a></p>
+                </article>
+            </div>
+        </section>
+        <section id="restaurante">
+            <h2>Mi restaurante</h2>
+            <div class="anchomax">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio officiis ea beatae facilis debitis
+                fugiat pariatur quam? Quis, esse! Quae ipsam delectus, libero ab debitis distinctio cupiditate nulla
+                ipsa id.</p>
+            </div>
+        </section>
+        <section id="reserva">
+            <h2>Reserva</h2>
+            <div class="anchomax">
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Datos de contacto</legend>
+                        <div>
+                            <label for="name">Dime tu nombre:</label><input type="text" id="name" name="name">
+                        </div>
+                        <div>
+                            <label for="telefono">Dime tu teléfono:</label><input type="tel" id="telefono"
+                                name="telefono">
+                        </div>
+                        <div>
+                            <label for="email">Dime tu email:</label><input type="email" id="email" name="email">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Datos de reserva</legend>
+                        <div>
+                            <label for="fecha">Día:</label><input type="date" id="fecha" name="fecha">
+                        </div>
+                        <div>
+                            <label for="personas">Número de personas:</label>
+                            <select id="personas" name="personas">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
+                        </div>
+                        <div>
+                            <p>¿Cuando prefieres venir?</p>
+                            <input type="radio" name="cuando" id="mediodia" value="mediodia"><label
+                                for="mediodia">Mediodía</label>
+                            <input type="radio" name="cuando" id="noche" value="noche"><label for="noche">Noche</label>
+                        </div>
+                    </fieldset>
+
+                    <div>
+                        <input type="checkbox" name="aceptacion" ìd="aceptacion" required><label for="aceptacion">Acepto
+                            la <a href="#" title="Ver la política de privacidad" target="_blank">politica de
+                                privacidad</a></label>
+                    </div>
+                    <input type="submit" value="Hacer reserva">
+                    <input type="reset" value="Empezar de nuevo">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#" title="Ver política de privacidad">Política de privacidad</a></li>
+                <li><a href="#" title="Ver política de cookies">Política de cookies</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+a, a:link {
+    color: red;
+}
+a:hover {
+    color: black;
+}
+header{
+    background-color: #fff;
+    box-shadow: 0 0 8px 4px rgba(0,0,0,0.15);
+
+}
+nav {
+    width: 100%;
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+header nav ul {
+    justify-content: flex-end;
+    column-gap: 1rem;
+}
+footer nav ul {
+    justify-content: center;
+    column-gap: 1rem;
+}
+h1, h2, h3 {
+    text-align: center;
+}
+section {
+    padding: 4rem 0;
+}
+#carta , #reserva {
+    background-color: #efefef;
+}
+.anchomax {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+}
+article {
+    padding: 1rem;
+    border: 1px dashed rgb(0, 0, 0);
+    box-shadow: 0px 0px 8px 4px rgba(0,0,0,0.5);
+    border-radius: 5%;
+}
+#check, .checkbox  {
+    display: none;
+}
+@media screen and (max-width: 780px) {
+    .checkbox {
+        display: block;
+    }
+    header ul  {
+        display: none;
+    }
+    header #check:checked ~ ul {
+        display: block;
+    }
+}

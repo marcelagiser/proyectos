@@ -1,0 +1,17 @@
+h3 {
+    font-style: italic;
+}
+
+.festivo {
+    color: red;
+}
+
+ol li:first-child {
+    font-size: 32px;
+
+}
+
+ol li:last-child {
+    font-size: 32px;
+
+}

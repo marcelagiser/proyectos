@@ -1,0 +1,121 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+ */
+@font-face {
+  font-family: 'tranformers';
+  src: url(../fonts/TransformersMovie.eot) format('eot'),
+    url(../fonts/TransformersMovie.otf) format('otf'),
+    url(../fonts/TransformersMovie.ttf) format('ttf'),
+    url(../fonts/TransformersMovie.woff) format('woff'),
+    url(../fonts/TransformersMovie.woff2) format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+:root {
+  --bg-color: #fff;
+  --primary: #123;
+  --secondary:#273a6c;
+  --acento: rgb(145, 10, 10);
+  --mode: #ffcb00;
+  --tonomedio: #eaeaea90;
+}
+
+:root.oscuro {
+  --bg-color: #121212;
+  --primary: #f4f4f4;
+  --secondary:#a6bcf4;
+  --acento: rgb(246, 47, 47);
+  --mode: #0088ff;
+  --tonomedio: #eaeaea90;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-color);
+  color: var(--primary);
+  font-family: 'Inter', sans-serif
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2.5rem 0;
+  height: 100vh;
+  box-sizing: border-box;
+}
+section {
+  width: 100%;
+  padding: 2.5rem 0;
+}
+nav {
+  width: 96%;
+  max-width: 600px;
+  margin:0 auto;
+}
+ul {
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+footer ul {
+  justify-content: center;
+  column-gap: 2rem;
+}
+.anchomax {
+  width: 96%;
+  max-width: 1240px;
+  margin:  0 auto;
+}
+h1 {
+  text-align: center;
+  font-weight: normal;
+  font-family: 'tranformers';
+  color: var(--secondary);
+}
+h2 {
+  font-family: 'tranformers';
+  color: var(--secondary);
+}
+
+a, a:link, a:visited {
+  font-weight: bold;
+  color: var(--acento);
+}
+a:hover {
+  color: var(--text-color);
+}
+
+
+footer {
+  text-align: center;
+  padding: 0.5rem 0;
+  background-color: var(--tonomedio);
+}
+
+footer p {
+  font-size: 0.75rem;
+  margin: 0.25rem 0;
+  color:var(--primary);
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
+.tema-btn {
+  width: 3em;
+  height: 3em;
+  padding: 0.5em;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  background-color: var(--mode);
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}

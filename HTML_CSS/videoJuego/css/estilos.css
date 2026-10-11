@@ -1,0 +1,37 @@
+ body{
+	background-color: indianred;
+	color: white;
+	
+	font-family: "Arial";
+	text-align: center;
+	
+	margin: 0;
+ }
+ a{
+	 color: gold;
+	 font-weight: bold;
+ }
+ 
+ h2{
+	 text-align: center;
+	 background-color: black;
+	 color: white;
+	 
+	 padding: 16px;
+	 margin-top: 0;
+ }
+ .contenedor_oferta{
+	text-align: center;
+ }
+ button{
+	 padding: 10px 25px;
+ }
+ footer{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	
+	text-align: center;
+	padding: 25px;
+	width: 100%;
+ }

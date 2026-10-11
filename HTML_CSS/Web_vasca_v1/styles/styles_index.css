@@ -1,0 +1,15 @@
+/* estilos del cuerpo */
+main{	
+	/* altura del main= todo menos la cabecera y el pie. tienen altura fija */
+	min-height: calc(100vh - (var(--alturaCabecera) + var(--alturaPie)));
+	background-color: var(--colorFondoClaro);
+	
+	
+}
+
+#contenedor{
+	padding:var(--paddingGeneral);
+}
+
+
+

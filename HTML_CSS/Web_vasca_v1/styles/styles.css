@@ -1,0 +1,190 @@
+@charset "UTF-8";
+/*
+CODIGO BASE DE LA WEB. NO TOCAR
+cualquier modificacion de estilos sobre esta base se hara
+en una hoja de estilos adicional y se enlazara al JSP correspondiente
+*/
+
+:root {
+  /* Colores Azul*/
+  --principal: #076382;
+  --principalOscuro: #003b5d;
+  --principalMuyOscuro: #004848;
+  --principalClaro: #007ea5;
+  --principalMuyClaro: #0068b8;
+
+  /* contraste */
+  --contraste: #ffffff;
+  --contrasteOscuro: #ff0000d2;
+  --contrasteClaro: #f4fc00;
+  
+  /* Colores de Fondo */
+  --colorFondoOscuro: #027575de;
+  --colorFondoClaro: #F5FEFE;
+  
+  /* Colores de Texto */
+  --texto: #212121; 
+  --textoClaro: #BDBDBD; 
+  
+  /* Tamaños */
+  --sizeFuente: 12px;
+  
+  /* Fuentes */
+  --fuente: 'Helvetica Neue', Arial, sans-serif;
+  --fuenteContraste: 'Georgia', 'Times New Roman', serif;
+  
+  /* Alturas de cabecera y pie */
+  --alturaCabecera: 180px;
+  --alturaPie: 140px;
+
+  /* Paddings*/
+  --paddingGeneral: 5px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: var(--fuente);
+	color: var(--texto);
+	font-size:var(--texto);
+
+
+}
+
+
+/* Estilos de la cabecera */
+header{
+	/*este height se usa en el calculo del tamaño del main*/
+	height:var(--alturaCabecera);
+	background-color: var(--principal);
+	display:flex;
+	flex-direction:column;
+	justify-content: flex-end;
+	
+}
+
+#sobremenu{
+	display:flex;
+	flex-direction:row;
+	justify-content: space-between;
+	align-items:center ;
+	padding: var(--paddingGeneral);
+}
+
+#sobremenu #head_izq{
+	display:flex;
+	flex-direction:column;
+	justify-content: center;
+	align-items:flex-start ;
+}
+
+#sobremenu #head_cen{
+	display:flex;
+	flex-direction:column;
+	justify-content: center;
+	align-items:center;
+}
+
+#sobremenu #head_der{
+
+	display:flex;
+	flex-direction:row;
+	height: 100%;
+	justify-content: flex-end;
+	align-items:flex-end ;
+}
+
+#sobremenu #head_der img{
+	padding-left: var(--paddingGeneral);
+}
+
+h1{
+	margin:10px;
+	color:var(--contraste);
+	font-family: var(--fuenteContraste);
+	font-size:48px;
+}
+
+#menu{
+
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	
+	
+}
+
+
+/* Estilos del menu */
+nav{
+	background-color: var(--principalOscuro);
+	
+}
+
+.elem_menu{
+	display:inline-block;
+	list-style: none;
+	padding-left: 0px;
+}
+
+.elem_menu > a{
+	display:block;
+	background-color:var(--principalOscuro);
+	padding: 8px 30px;	
+	color: var(--contraste);
+	font-weight: bold;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+.elem_menu > a:visited{
+	color: var(--contraste);
+}
+
+.elem_menu > a:hover{
+	background-color:var(--principalClaro);
+	color: var(--contrasteClaro);
+}
+.elem_menu > a:active{
+	background-color:var(--contraste);
+	color: var(--principalMuyOscuro);
+}
+
+
+/* estilos del pie */
+footer{
+	/*este height se usa en el calculo del tamaño del main*/
+	height:var(--alturaPie);
+	background-color: var(--principal);
+	display:flex;
+	flex-direction:row;
+	justify-content: flex-start;
+	align-items:center;
+	width:100%;
+	
+}
+
+footer #foot_izq{
+	display:flex;
+	flex-direction:column;
+	justify-content: flex-start;
+	align-items: flex-end;
+	width:50%;
+	padding: var(--paddingGeneral);
+	color: var(--contraste);
+}
+
+footer #foot_izq *,footer #foot_der *{
+	color: var(--contraste);
+}
+
+
+footer #foot_der{
+	display:flex;
+	flex-direction:column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	width:50%;
+	padding: var(--paddingGeneral);
+}

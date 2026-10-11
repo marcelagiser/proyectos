@@ -1,0 +1,147 @@
+:root {
+    --fondopantalla: #72b6e6;
+    --letraTitulos: #111010;
+    --letraMenu: #fffffff9;
+    --letraTexto: black;    
+}
+
+html, body {
+   background-color: #d2f6fa;
+   padding: 0;
+   margin: 0;
+}
+
+header {
+    color: var(--letraTexto);
+    background-color: var(--fondopantalla);
+    width: 100%;
+    margin: 0 auto;
+    position: sticky;
+    top: 0;   
+    display: flex;
+    text-align: center;
+    padding: 2rem 0;
+    transition: all 0.3s ease-in-out; 
+}
+
+.encabezado{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+header.cabecera {
+    background-color: #7914b0b9; 
+    padding: 0.5rem 0;    
+}
+
+header.cabecera img{
+    filter: grayscale(1);
+}
+
+header.cabecera a {
+    color: white;
+}
+
+.logoClaro img {  
+    border-radius: 50%;  
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.logoClaro {
+    width: 20%;
+    text-align: center;
+}
+
+a,
+a:link,
+a:visited {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--letraTitulos);
+    padding: 2.5rem 3rem;
+    display: block;
+}
+
+a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+main {
+    font-size: large;
+    color: var(--letraTexto);
+    width: 100%;
+    list-style-type: none;
+    box-sizing: border-box;/* Me ayuda a que todo se contenga dento de mi cuadro exacto sin salir nada*/
+    padding:0 1.5rem 10rem 1.5rem;
+    text-align: left;
+    font-style: italic;
+}
+
+ul {
+    color: var(--letraTexto);
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h1 {
+    color: var(--letraTitulos);
+    padding: 5px;
+    justify-content: center;
+
+}
+
+
+footer {
+    color: var(--letraTexto);
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    justify-content: space-evenly;
+}
+
+#manos {
+    text-align: center;
+}
+
+#modal {
+    position: absolute;
+    top: 0;
+    width: calc(100vw - 6rem);
+    height: calc(100vh - 6rem);
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 3rem;
+    box-sizing: border-box;
+    display: none;
+    text-align: center;
+}
+
+#modal.active {
+    display: block;
+}
+
+#modal img {
+    width: auto;
+    height: 80%;
+    margin: 0;
+}
+
+span.cerrar {
+    color: var(--letraTitulos);
+    border: 2px solid var(--letraTitulos);
+    font-weight: bold;
+    padding: 0.5rem 0.75rem;
+    background-color: rgba(255, 30, 0, 0.407);
+
+}

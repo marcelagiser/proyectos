@@ -1,0 +1,282 @@
+* {
+  box-sizing: border-box;
+}
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@keyframes showHeader {
+  0% {
+    transform: translate(0%, 100%);    
+	opacity: 0;
+  }
+  100% {
+    transform: translate(0%, 0%);
+	opacity: 0.7;
+  }
+}
+html,
+body {
+background-color:#ffffff;
+}
+
+.parallax {
+  perspective: 100px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: absolute;
+  top: 0;
+  left: 0%;
+  right: 0;
+  bottom: 0;
+  margin-left: 0%;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+}
+.parallax__layer img {
+  	display: block;
+    position: absolute;
+    bottom: 0;
+}
+
+.parallax__cover {
+  background-color:#010b33;
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 2000px;
+  z-index: 2;
+  
+}
+.parallax__layer__0 {
+  -webkit-transform: translateZ(-300px) scale(4);
+          transform: translateZ(-300px) scale(4);
+		  background-image: url(../img/otono_noche_fondo-01.png);
+}
+
+.parallax__layer__1 {
+  -webkit-transform: translateZ(-250px) scale(3.5);
+          transform: translateZ(-250px) scale(3.5);
+		  background-image: url(../img/otono_noche_montanasdos.png);
+}
+
+.parallax__layer__2 {
+  -webkit-transform: translateZ(-200px) scale(3);
+          transform: translateZ(-200px) scale(3);
+		   background-image: url(../img/otono_noche_montanasuno-01.png);
+}
+
+.parallax__layer__3 {
+  -webkit-transform: translateZ(-150px) scale(2.5);
+          transform: translateZ(-150px) scale(2.5);
+		  background-image: url(../img/otono_noche_lago-01.png);
+}
+
+.parallax__layer__5 {
+  -webkit-transform: translateZ(-100px) scale(2);
+          transform: translateZ(-100px) scale(2);
+}
+
+.parallax__layer__6 {
+  -webkit-transform: translateZ(-50px) scale(1.5);
+          transform: translateZ(-50px) scale(1.5);
+		  background-image: url(../img/otono_noche_librosuno-01.png);
+}
+
+.parallax__layer__7 {
+  -webkit-transform: translateZ(0px) scale(1);
+          transform: translateZ(0px) scale(1);  
+		  background-image: url(../img/otono_noche_librosdos.png);
+}
+/*capa logo*/
+.parallax__layer__4 {
+  -webkit-transform: translateZ(-300px) scale(3);
+          transform: translateZ(-300px) scale(3);
+/*animation: fadeIn 20s ease;	*/  
+}
+/*imagen logo*/
+.parallax__layer.parallax__layer__4 img {
+    top: 25%;
+    width: 35%;
+    left: 32%;
+    opacity: 0.7;
+	position:relative;
+	animation:showHeader 5s;
+	animation-delay:2.25s;
+	animation-fill-mode:backwards;
+	
+}
+.parallax__layer__8 {
+  -webkit-transform: translateZ(-300px) scale(3);
+          transform: translateZ(-300px) scale(3);
+}
+.parallax__layer.parallax__layer__8 h1 {
+    top: 45%;
+    width: 50%;
+    left: 25%;
+    opacity: 0.7;
+	position:relative;
+	animation:showHeader 5s;
+	animation-delay:2.25s;
+	animation-fill-mode:backwards;
+	
+}
+h1.index {
+    font-size: 5em;
+    text-align: center;
+    color: #fff;
+	font-family: 'Montserrat', sans-serif;
+}
+@media screen and (max-width: 768px) {
+	h1.index {
+    font-size: 2.5em;
+    text-align: center;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+.parallax__layer.parallax__layer__4 img {
+    top: 35%;
+    width: 55%;
+    left: 25%;
+}
+}
+/*loading*/
+.loader {
+    font-size: 10px;
+    margin: 50px auto;
+    text-indent: -9999em;
+    width: 18em;
+    height: 18em;
+    border-radius: 50%;
+    background: -moz-linear-gradient(left, #ee7415 55%, rgba(255, 255, 255, 0) 90%);
+    background: -webkit-linear-gradient(left, #ee7415 55%, rgba(255, 255, 255, 0) 90%);
+    background: -o-linear-gradient(left, #ee7415 55%, rgba(255, 255, 255, 0) 90%);
+    background: -ms-linear-gradient(left, #ee7415 55%, rgba(255, 255, 255, 0) 90%);
+    background: linear-gradient(to right, #ee7415 55%, rgba(255, 255, 255, 0) 90%);
+    position: relative;
+    -webkit-animation: load3 1.4s infinite linear;
+    animation: load3 1.4s infinite linear;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+}
+.loader:before {
+	width: 50%;
+    height: 50%;
+    background: #ee7415;
+    border-radius: 0 0 100% 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    content: '';
+}
+.loader:after {
+  background: #ffffff;
+  width: 85%;
+  height: 85%;
+  border-radius: 50%;
+  content: '';
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.final-redondeado {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    background-color: #ee7415;
+    width: 1.5em;
+    height: 1.5em;
+    top: 45%;
+    right: 0px;
+}
+img.logo-loader {
+	position: relative;
+    z-index: 99;
+	margin-right: auto;
+	margin-left: auto;
+    width: 3.5em;
+    height: auto;
+	animation: lds-heart 1.4s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+	top: -11.5em;
+}
+@-webkit-keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    -webkit-transform: rotate(-180deg) scale(1.15);
+    transform: rotate(-180deg) scale(1.15);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg) scale(1);
+    transform: rotate(-360deg) scale(1);
+  }
+}
+@keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    -webkit-transform: rotate(-180deg) scale(1.15);
+    transform: rotate(-180deg) scale(1.15);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg) scale(1);
+    transform: rotate(-360deg) scale(1);
+  }
+}
+@keyframes lds-heart {
+  0% {
+    transform:scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+div#loader {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+	margin-right: 25%;
+	margin-left: 25%;
+    margin-top: 23%;
+	background-color:#ffffff;
+}
+@media screen and (max-width: 1024px) and (orientation: portrait) {
+div#loader {
+    margin-top: 50%;
+}
+}
+@media screen and (max-width: 900px) and (orientation: landscape) {
+div#loader {
+    margin-top: 7%;
+}
+}

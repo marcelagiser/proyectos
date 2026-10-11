@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>MI TIENDA</title>
+	<link rel="stylesheet" href="styles/styles.css">	
+	<link rel="stylesheet" href="styles/styles_contacto.css">
+</head>
+
+<body>
+
+	<header>
+		<div id="sobremenu">
+			<div id="head_izq">
+				<img src="imagenes/logo.png" alt="" height="92px">
+			</div>
+			<div id="head_cen">
+				<h1>Estilo Para Comunidad Vasca</h1>
+			</div>
+			<div id="head_der">
+				<a href="https://www.facebook.com/marcela.serrano.1205" target="_blank">
+					<img src="imagenes/iconos/facebook.png" alt="" height="48px">
+				</a>
+				<a href="https://www.instagram.com/marcelaserrano.2/" target="_blank">
+					<img src="imagenes/iconos/instagram.png" alt="" height="48px">
+				</a>
+			</div>
+		</div>
+		
+		<nav>
+			<ul id="menu">
+				<li class="elem_menu">
+					<a href="index.html">
+						<img src="imagenes/iconos/ico_casa.svg" alt="" height="24px">
+						Inicio
+					</a>
+				</li>
+				<li class="elem_menu">
+					
+					<a href="ropa.html">
+						<img src="imagenes/iconos/ico_camiseta.svg" alt="" height="24px">
+						Ropa
+					</a>
+				</li>
+				<li class="elem_menu">
+					<a href="productos.html">
+						<img src="imagenes/iconos/ico_tenedor.svg" alt="" height="24px">
+						Productos
+					</a>
+				</li>
+				<li class="elem_menu">
+					<a href="contacto.html">
+						<img src="imagenes/iconos/ico_sobre.svg" alt="" height="24px">
+						Contacto
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section>
+			<h2 class="primerTitulo">NUESTROS CANALES DE ATENCIÓN</h2>			
+		</section>
+
+		<section class="redes">
+			<a href="https://www.facebook.com" target="_blank">
+				<img src="imagenes/iconos/facebook.png" alt="" height="90px">
+			</a>
+			<a href="https://www.instagram.com" target="_blank">
+				<img src="imagenes/iconos/instagram.png" alt="" height="90px">
+			</a>
+			<a href="https://accounts.google.com/" target="_blank">
+				<img src="imagenes/iconos/ico_sobre.svg" alt="" height="90px">
+			</a>
+		</section>
+
+
+
+		<section id="contenedor">
+			<h3 class="sugerencias">BUZÓN DE SUGERENCIAS</h3>			
+		</section>		
+		<section class="sugerencias">
+			<form action="" method="get">
+				<label for="nombre">Nombre:</label>
+				<input class="input-Class" type="text" name="nombre" id="nombre" required> <br>
+
+				<label for="telefono">Telefono:</label>
+				<input class="input-Class" type="tel" name="telefono" id="telefono" required> <br>
+
+				<label for="correo">Email:</label>
+				<input class="input-Class" type="email" name="correo" id="correo" required> <br>
+
+				<label for="mensaje">Mensaje:</label>
+				<textarea class="input-Class" name="mensaje" id="mensaje" cols="30" rows="4" required></textarea>
+				<br>
+
+				<label for="" class="etiquetaLineaEntera">¿Es la primera vez que hace una sugerencia del sitio?:</label>
+									
+				<input class="input-Class" type="radio" name="tiendaOnLine" id="opcSi" value="si" >
+				<label for="opcSi" class="etiquetaLineaEnteraRespuesta" required>Si</label>
+
+				<input class="input-Class" type="radio" name="tiendaOnLine" id="opcNo" value="no">
+				<label for="opcaNo" class="etiquetaLineaEnteraRespuesta" required>No</label>
+
+				<br>
+				<br>
+
+				<input class="button color" type="submit" value="Enviar">
+			
+			</form>
+		</section> 
+		
+	</main>
+
+	<footer>
+		<section id="foot_izq">
+			<p> &copy;2024</p>
+		</section>
+		<section id="foot_der">
+			<h2>Legal</h2>
+			<p>
+				<a href="">Cookies</a>
+			</p>
+			<p>
+				<a href="">Condiciones legales</a>
+			</p>
+			<p>
+				<a href="">Condiciones de uso</a>
+			</p>
+
+		</section>
+	</footer>	
+
+</body>
+</html>
